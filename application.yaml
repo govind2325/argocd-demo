@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-argo-application
+  name: my-argo-demo
   namespace: argocd
 spec:
   project: default
@@ -14,7 +14,7 @@ spec:
     namespace: myapp
 
   syncPolicy:
-    syncOptions:
+    syncOptions: 
     - CreateNamespace=true  
 
     automated:

@@ -18,3 +18,7 @@ kubectl get secret  argocd-initial-admin-secret -n argocd -o yaml
 # Attach argocd to container
 
 kubectl apply -f application.yaml
+
+pruning:
+
+kubectl edit deployment -n myapp myapp-deployment
