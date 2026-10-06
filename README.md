@@ -14,6 +14,7 @@ kubectl get secret  argocd-initial-admin-secret -n argocd -o yaml
 
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("eGI3SUpXU1BsbXVlMTJCcg=="))
 
+eGI3SUpXU1BsbXVlMTJCcg==
 
 # Attach argocd to container
 
