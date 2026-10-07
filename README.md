@@ -24,4 +24,7 @@ pruning:
 
 kubectl edit deployment -n myapp myapp-deployment
 
-kubectl create secret docker-registry dockerhub-cred --docker-server=https://index.docker.io/v1/  --docker-username=xxxxx --docker-password= --docker-email=xx@test.com -n myapp
+kubectl create secret docker-registry dockerhub-cred --docker-server=https://index.docker.io/v1/  --docker-username=sgovi --docker-password=--docker-email=gsnathan77@yahoo.com
+
+
+scp -i $(minikube ssh-key) docker@$(minikube ip):.docker/config.json .docker/config.json
