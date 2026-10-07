@@ -23,3 +23,5 @@ kubectl apply -f application.yaml
 pruning:
 
 kubectl edit deployment -n myapp myapp-deployment
+
+kubectl create secret docker-registry dockerhub-cred --docker-server=https://index.docker.io/v1/  --docker-username=xxxxx --docker-password= --docker-email=xx@test.com -n myapp

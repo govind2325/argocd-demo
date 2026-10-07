@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -15,5 +15,8 @@ spec:
       containers:
       - name: myapp
         image: docker.io/sgovi/my-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+        - name: dockerhub-cred 
