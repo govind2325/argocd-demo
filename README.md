@@ -12,10 +12,10 @@ username :admin
 pwd :   > kubectl get secret -n argocd
 kubectl get secret  argocd-initial-admin-secret -n argocd -o yaml
 
-[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("eGI3SUpXU1BsbXVlMTJCcg=="))
+[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("V2xzbk94c25janRYM3FpSg=="))
 
 eGI3SUpXU1BsbXVlMTJCcg==
-
+V2xzbk94c25janRYM3FpSg==  WlsnOxsncjtX3qiJ
 # Attach argocd to container
 
 kubectl apply -f application.yaml
